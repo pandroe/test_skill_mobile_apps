@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'providers/list_users_provider.dart';
-import 'views/list_view_screen/views/list_users_screen.dart';
-
+import 'views/image_picker_screen/views/image_picker_screen.dart';
 
 void main() {
   runApp(
@@ -18,9 +17,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: UserList(),
+      debugShowCheckedModeBanner: false,
+      home: ImagePickerScreen(),
     );
   }
 }
-
-
