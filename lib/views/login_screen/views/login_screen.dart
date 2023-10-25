@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:test_skill_mobile_apps/views/list_view_screen/views/list_users_screen.dart';
+import 'package:test_skill_mobile_apps/views/home_screen/views/home_screen.dart';
 
 import '../../../controllers/user_controllers.dart';
 
@@ -44,8 +44,8 @@ class _LoginScreenState extends State<LoginScreen> {
               try {
                 final user = await UserLoginController.loginWithGoogle();
                 if (user != null && mounted) {
-                  Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(builder: (context) => UserList()));
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (context) => const HomeScreen()));
                 }
               } on FirebaseAuthException catch (e) {
                 print(e.message);
