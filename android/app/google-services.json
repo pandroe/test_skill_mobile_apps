@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1087884019618",
+    "project_id": "test-skill-mobile-apps",
+    "storage_bucket": "test-skill-mobile-apps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087884019618:android:449b176e09e0b1a8fb14fb",
+        "android_client_info": {
+          "package_name": "com.example.test_skill_mobile_apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087884019618-a9tgll6huq3l4gmjnuvg8347qjm8rsos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ5lnCRpE1NJK3Li6MuPsLhN_1TP70Vps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087884019618-a9tgll6huq3l4gmjnuvg8347qjm8rsos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
