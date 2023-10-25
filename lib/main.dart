@@ -1,6 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:test_skill_mobile_apps/controllers/user_controllers.dart';
+import 'package:test_skill_mobile_apps/views/home_screen/views/home_screen.dart';
 
 import 'providers/list_users_provider.dart';
 import 'utils/firebase_options.dart';
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      home: UserLoginController.user != null ? HomeScreen() : LoginScreen(),
     );
   }
 }
